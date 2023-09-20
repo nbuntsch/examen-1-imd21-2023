@@ -11,6 +11,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -280,6 +281,15 @@ h2 {
 .opportunities-section .card:nth-last-of-type(2) {
   border-left: none;
 }
+
+.opportunities-section a {
+  text-decoration: none;
+}
+
+.opportunities-section a:hover {
+  background-color: #8ee709;
+  transition: 0.8s;
+}
 /* end of the opportunities-section */
 
 /* start of the footer */
@@ -314,7 +324,7 @@ footer div p:first-of-type {
   text-transform: uppercase;
 }
 
-footer div p:last-of-type {
+footer div a {
   color: #fff;
   text-align: center;
   font-family: Noto Serif;
@@ -322,6 +332,7 @@ footer div p:last-of-type {
   font-style: normal;
   font-weight: 300;
   line-height: 18px;
+  text-decoration: none;
 }
 
 footer .text-box {
