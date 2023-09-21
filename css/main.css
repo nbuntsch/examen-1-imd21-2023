@@ -1,13 +1,7 @@
-/* ====================================
-// css variables
-// ==================================== */
-
 :root {
+  --green-color: #98fb00;
+  --violet-color: #d7a1fd;
 }
-
-/* ====================================
-// reset rules
-// ==================================== */
 
 * {
   box-sizing: border-box;
@@ -17,12 +11,7 @@
 
 html {
   font-size: 16px;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -34,4 +23,320 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: text-top;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  width: 428px;
+  margin: auto;
+}
+
+/* start of the header */
+header {
+  background-color: var(--violet-color);
+  text-align: center;
+  padding: 15px 25px 20px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Nunito Sans";
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+h1 span {
+  font-family: "Noto Serif";
+  font-weight: 300;
+}
+
+header p {
+  color: #fff;
+  font-family: "Noto Serif";
+  font-size: 20px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 24px;
+}
+/* end of the header */
+
+/*start of the nav */
+nav {
+  background-color: #000;
+  padding: 20px 41.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+nav li {
+  color: #fff;
+  font-family: "Noto Serif";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+nav a {
+  text-decoration: none;
+}
+/* end of the nav */
+
+/* start of the main section/*
+/* start of the programme-section */
+h2 {
+  color: #000;
+  text-align: center;
+  font-family: Noto Serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 50px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.programme-section .card-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.programme-section {
+  padding: 60px 20px 50px;
+}
+
+.programme-section .card {
+  width: 188px;
+  text-align: center;
+}
+
+.programme-section .card p:first-of-type,
+.programme-section .card p:nth-last-of-type(3) {
+  font-family: "Noto Serif";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.programme-section .card p:first-of-type {
+  margin-bottom: 20px;
+}
+
+.programme-section .card p:nth-last-of-type(2) {
+  font-family: "Nunito Sans";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.programme-section .text-box {
+  padding: 20px 0;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-top: 7px var(--violet-color) solid;
+  height: 175px;
+}
+
+.programme-section a {
+  text-decoration: none;
+  color: var(--violet-color);
+  background-color: #000;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 15px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  display: inline-block;
+  margin: 0px 77px 10px 77px;
+}
+/* end of the upper main section */
+
+/* start of the quote-section */
+.quote-section {
+  padding: 20px;
+  background-color: var(--green-color);
+  color: #000;
+  text-align: center;
+}
+
+.quote-section p:first-of-type {
+  font-family: "Nunito Sans";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.quote-section p:nth-of-type(2) {
+  font-family: "Noto Serif";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 15px; /* 100% */
+  text-transform: uppercase;
+}
+/* end of the quote-section */
+
+/* start of the news-section */
+.news-section {
+  padding: 60px 20px;
+  background-color: #f4ede8;
+}
+
+.news-section .card-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.news-section img {
+  height: 259px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.news-section .card {
+  display: flex;
+  flex-flow: column wrap;
+  width: 189px;
+}
+
+.news-section p {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: "Noto Serif";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.news-section strong {
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* end of the news-section */
+
+/*start of the opportunities-section */
+.opportunities-section h2 {
+  font-family: "Nunito Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: -2.5px;
+  text-transform: uppercase;
+  padding: 20px;
+  background-color: var(--violet-color);
+}
+
+.opportunities-section .card-container {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 1px solid #000;
+  padding-bottom: 60px;
+}
+
+.opportunities-section .card {
+  background-color: var(--green-color);
+  font-family: "Nunito Sans";
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  padding: 20px 10px;
+  width: 50%;
+}
+
+.opportunities-section .card:nth-last-of-type(2) {
+  border-left: none;
+}
+
+.opportunities-section a {
+  text-decoration: none;
+}
+
+.opportunities-section a:hover {
+  background-color: #8ee709;
+  transition: 0.8s;
+}
+/* end of the opportunities-section */
+
+/* start of the footer */
+footer {
+  background-color: #000;
+  height: 238px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+h3 {
+  color: #313131;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+footer div p:first-of-type {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+footer div a {
+  color: #fff;
+  text-align: center;
+  font-family: Noto Serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+footer .text-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
